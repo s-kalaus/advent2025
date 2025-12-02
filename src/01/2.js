@@ -4,7 +4,7 @@ const bootstrap = (input) => {
   let dialPosition = 50;
   let count = 0;
 
-  input.forEach((str) => {
+  input.split('\n').forEach((str) => {
     const direction = str.slice(0, 1) === 'R' ? 1 : -1;
     const moves = +str.slice(1);
 
